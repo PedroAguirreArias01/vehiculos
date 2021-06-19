@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "//Hibernet/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Vehiculo" table="vehiculos">
+        <id name="placa" type="string">
+            <column name="cod_placa"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="modelo" type="java.lang.Integer">
+            <column name="modelo"/>
+        </property>
+        <property name="marca" type="string">
+            <column name="marca"/>
+        </property>
+    </class>
+</hibernate-mapping>
